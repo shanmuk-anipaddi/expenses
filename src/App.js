@@ -41,8 +41,7 @@ function App() {
   const addExpenseHandler = (newExpense) => {
       console.log(newExpense);
       addExpenses((prevExpenses) => {
-        return [newExpense,...prevExpenses];
-        
+        return [newExpense,...prevExpenses];        
       })
   }
 
