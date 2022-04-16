@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import ExpenseItem from "./ExpenseItem";
 import Card from "../UI/Card";
 import ExpenseFilter from "./EventFilter";
+import ExpenseChart from "./ExpenseChart";
+
 const ExpenseList = (props) => {
   console.log(props);
   const [selectedYear, selectYear] = useState("2020");
@@ -21,10 +23,12 @@ const ExpenseList = (props) => {
 
   if (filteredExpenses.length > 0) {
     expenseItems = filteredExpenses.map((expense) => (
+      
       <ExpenseItem key={expense.Id} items={expense} />
     ));
   }
-
+  // console.log("ExpenseList");
+  // console.log(expenseItems);
   return (
     <div>
       <Card className="p-4 bg-gray-800 mb-8 m-auto w-2/4 max-w-[95%]">
@@ -33,6 +37,7 @@ const ExpenseList = (props) => {
         {/* {if(filteredExpenses.length > 0){ return (
                     <h2>No Data Found !</h2>
                 )               }} */}
+        <ExpenseChart expenses={filteredExpenses} />
         {expenseItems}
       </Card>
     </div>
