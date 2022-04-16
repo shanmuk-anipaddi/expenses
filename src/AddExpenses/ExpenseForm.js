@@ -50,7 +50,7 @@ const ExpenseForm = (props) => {
 
   if(FormFlag === 0){
     return (
-      <div className="bg-[#a892ee] p-4 mt-8 mb-8 mx-auto w-[50rem] mx-w-[95%] rounded-xl text-center shadow-[0_1px_8px_rgba(0,0,0,0,25)]">
+      <div className="bg-[#a892ee] p-4 mt-8 mb-8 mx-auto w-2/4 mx-w-[95%] rounded-xl text-center shadow-[0_1px_8px_rgba(0,0,0,0,25)]">
         <button
           type="button"
           className="font-inherit cursor-pointer py-4 px-8 border border-[#40005d] text-white rounded-xl mr-4 bg-[#40005d] hover:bg-[#510674] hover:border-[#510674] active:bg-[#510674] active:border-[#510674]"
@@ -63,7 +63,7 @@ const ExpenseForm = (props) => {
   }
 
   return (
-    <div className="bg-[#a892ee] p-4 mt-8 mb-8 mx-auto w-[50rem] mx-w-[95%] rounded-xl text-center shadow-[0_1px_8px_rgba(0,0,0,0,25)]">
+    <div className="bg-[#a892ee] p-4 mt-8 mb-8 mx-auto w-2/4 mx-w-[95%] rounded-xl text-center shadow-[0_1px_8px_rgba(0,0,0,0,25)]">
       <form onSubmit={formSubmitHandler}>
         <div className="flex flex-wrap gap-px mb-4 text-left">
           <div>
